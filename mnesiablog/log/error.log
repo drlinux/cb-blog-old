@@ -1,0 +1,924 @@
+2014-12-29 13:53:11.443 [error] <0.115.0> gen_server <0.115.0> terminated with reason: {aborted,{combine_error,'_ids_',update_counter}} in mnesia:abort/1 line 310
+2014-12-29 13:53:11.443 [error] <0.115.0> CRASH REPORT Process <0.115.0> with 0 neighbours exited with reason: {aborted,{combine_error,'_ids_',update_counter}} in gen_server:terminate/7 line 804
+2014-12-29 13:53:11.443 [error] <0.114.0> Supervisor {<0.114.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.115.0> exit with reason {aborted,{combine_error,'_ids_',update_counter}} in context child_terminated
+2014-12-29 13:58:24.809 [error] <0.115.0> gen_server <0.115.0> terminated with reason: {aborted,{combine_error,'_ids_',update_counter}} in mnesia:abort/1 line 310
+2014-12-29 13:58:24.810 [error] <0.115.0> CRASH REPORT Process <0.115.0> with 0 neighbours exited with reason: {aborted,{combine_error,'_ids_',update_counter}} in gen_server:terminate/7 line 804
+2014-12-29 13:58:24.810 [error] <0.114.0> Supervisor {<0.114.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.115.0> exit with reason {aborted,{combine_error,'_ids_',update_counter}} in context child_terminated
+2014-12-29 14:02:05.476 [error] <0.285.0> gen_server <0.285.0> terminated with reason: {aborted,{combine_error,'_ids_',update_counter}} in mnesia:abort/1 line 310
+2014-12-29 14:02:05.477 [error] <0.285.0> CRASH REPORT Process <0.285.0> with 0 neighbours exited with reason: {aborted,{combine_error,'_ids_',update_counter}} in gen_server:terminate/7 line 804
+2014-12-29 14:02:05.477 [error] <0.114.0> Supervisor {<0.114.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.285.0> exit with reason {aborted,{combine_error,'_ids_',update_counter}} in context child_terminated
+2014-12-29 14:02:52.884 [error] <0.116.0> gen_server <0.116.0> terminated with reason: {aborted,{combine_error,'_ids_',update_counter}} in mnesia:abort/1 line 310
+2014-12-29 14:02:52.885 [error] <0.116.0> CRASH REPORT Process <0.116.0> with 0 neighbours exited with reason: {aborted,{combine_error,'_ids_',update_counter}} in gen_server:terminate/7 line 804
+2014-12-29 14:02:52.885 [error] <0.114.0> Supervisor {<0.114.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.116.0> exit with reason {aborted,{combine_error,'_ids_',update_counter}} in context child_terminated
+2014-12-29 14:42:24.019 [error] <0.316.0> GET / [mnesiablog] 404 0ms
+2014-12-29 17:41:08.905 [error] <0.150.0> gen_server <0.150.0> terminated with reason: no function clause matching boss_db_adapter_mnesia:find(undefined, "post", [], all, 0, id, ascending) line 44
+2014-12-29 17:41:08.906 [error] <0.150.0> CRASH REPORT Process <0.150.0> with 0 neighbours exited with reason: no function clause matching boss_db_adapter_mnesia:find(undefined, "post", [], all, 0, id, ascending) line 44 in gen_server:terminate/7 line 804
+2014-12-29 17:41:08.906 [error] <0.149.0> Supervisor {<0.149.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.150.0> exit with reason no function clause matching boss_db_adapter_mnesia:find(undefined, "post", [], all, 0, id, ascending) line 44 in context child_terminated
+2014-12-29 17:50:43.038 [error] <0.300.0> gen_server <0.300.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:50:43.038 [error] <0.300.0> CRASH REPORT Process <0.300.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:50:43.038 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.300.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:50:43.047 [error] <0.309.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.300.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:51:55.139 [error] <0.314.0> GET /list [mnesiablog] 404 0ms
+2014-12-29 17:52:09.415 [error] <0.311.0> gen_server <0.311.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:52:09.415 [error] <0.311.0> CRASH REPORT Process <0.311.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:52:09.415 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.311.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:52:09.416 [error] <0.316.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.311.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:18.394 [error] <0.318.0> gen_server <0.318.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:18.394 [error] <0.318.0> CRASH REPORT Process <0.318.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:18.395 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.318.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:18.395 [error] <0.321.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.318.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:18.980 [error] <0.323.0> gen_server <0.323.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:18.980 [error] <0.323.0> CRASH REPORT Process <0.323.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:18.981 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.323.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:18.981 [error] <0.325.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.323.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:19.293 [error] <0.327.0> gen_server <0.327.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:19.293 [error] <0.327.0> CRASH REPORT Process <0.327.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:19.293 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.327.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:19.294 [error] <0.329.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.327.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:19.708 [error] <0.331.0> gen_server <0.331.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:19.708 [error] <0.331.0> CRASH REPORT Process <0.331.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:19.708 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.331.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:19.708 [error] <0.333.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.331.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:19.964 [error] <0.335.0> gen_server <0.335.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:19.964 [error] <0.335.0> CRASH REPORT Process <0.335.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:19.964 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.335.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:19.964 [error] <0.337.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.335.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:40.443 [error] <0.339.0> gen_server <0.339.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:40.443 [error] <0.339.0> CRASH REPORT Process <0.339.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:40.444 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.339.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:40.444 [error] <0.341.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.339.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:40.972 [error] <0.343.0> gen_server <0.343.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:40.972 [error] <0.343.0> CRASH REPORT Process <0.343.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:40.972 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.343.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:40.972 [error] <0.345.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.343.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:41.228 [error] <0.347.0> gen_server <0.347.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:41.228 [error] <0.347.0> CRASH REPORT Process <0.347.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:41.228 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.347.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:41.228 [error] <0.349.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.347.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:41.386 [error] <0.351.0> gen_server <0.351.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:41.386 [error] <0.351.0> CRASH REPORT Process <0.351.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:41.386 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.351.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:41.386 [error] <0.353.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.351.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:53:41.531 [error] <0.355.0> gen_server <0.355.0> terminated with reason: {'module could not be loaded',[{mnesiablog_posts_controller,module_info,[exports],[]},{boss_controller_lib,convert_params_to_tokens,3,[{file,"src/boss/boss_controller_lib.erl"},{line,5}]},{boss_router_controller,route,2,[{file,"src/boss/boss_router_controller.erl"},{line,173}]},{boss_router_controller,handle_call,3,[{file,"src/boss/boss_router_controller.erl"},{line,64}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,...}]},...]}
+2014-12-29 17:53:41.531 [error] <0.355.0> CRASH REPORT Process <0.355.0> with 0 neighbours exited with reason: call to undefined function mnesiablog_posts_controller:module_info(exports) in gen_server:terminate/7 line 804
+2014-12-29 17:53:41.531 [error] <0.299.0> Supervisor {<0.299.0>,boss_router_sup} had child router_controller started with boss_router_controller:start_link([{application,mnesiablog},{controllers,["mnesiablog_posts_controller"]}]) at <0.355.0> exit with reason call to undefined function mnesiablog_posts_controller:module_info(exports) in context child_terminated
+2014-12-29 17:53:41.532 [error] <0.357.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: exit:{{undef,
+          [{mnesiablog_posts_controller,module_info,[exports],[]},
+           {boss_controller_lib,convert_params_to_tokens,3,
+               [{file,"src/boss/boss_controller_lib.erl"},{line,5}]},
+           {boss_router_controller,route,2,
+               [{file,"src/boss/boss_router_controller.erl"},{line,173}]},
+           {boss_router_controller,handle_call,3,
+               [{file,"src/boss/boss_router_controller.erl"},{line,64}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,[<0.355.0>,{route,"/"}]}} Stacktrace: [{gen_server,call,2,[{file,"gen_server.erl"},{line,182}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,249}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:56:13.619 [error] <0.308.0> GET / [mnesiablog] 404 0ms
+2014-12-29 17:58:57.221 [error] <0.316.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n">>,"basliksss",<<"<br />\n\n">>],
+                      [<<"\n\n">>,[66,97,351,108,305,107],<<"<br />\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:58:58.111 [error] <0.319.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n">>,"basliksss",<<"<br />\n\n">>],
+                      [<<"\n\n">>,[66,97,351,108,305,107],<<"<br />\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 17:58:58.369 [error] <0.321.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n">>,"basliksss",<<"<br />\n\n">>],
+                      [<<"\n\n">>,[66,97,351,108,305,107],<<"<br />\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 18:01:48.867 [error] <0.327.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n<li>">>,"basliksss",<<"\n\n">>],
+                      [<<"\n\n<li>">>,[66,97,351,108,305,107],<<"\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 18:04:02.348 [error] <0.302.0> Supervisor {<0.302.0>,boss_translator_sup} had child translator_controller started with boss_translator_controller:start_link([{application,mnesiablog}]) at <0.303.0> exit with reason killed in context child_terminated
+2014-12-29 18:04:09.321 [error] <0.147.0> Supervisor {<0.147.0>,poolboy_sup} had child boss_session_controller started with boss_session_controller:start_link([{name,{local,boss_session_pool}},{worker_module,boss_session_controller},{size,20},{max_overflow,...},...]) at undefined exit with reason shutdown in context shutdown_error
+2014-12-29 18:04:29.318 [error] <0.308.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n<li>">>,"basliksss",<<"\n\n">>],
+                      [<<"\n\n<li>">>,[66,97,351,108,305,107],<<"\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 18:04:30.105 [error] <0.310.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n<li>">>,"basliksss",<<"\n\n">>],
+                      [<<"\n\n<li>">>,[66,97,351,108,305,107],<<"\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 18:04:32.145 [error] <0.312.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n<li>">>,"basliksss",<<"\n\n">>],
+                      [<<"\n\n<li>">>,[66,97,351,108,305,107],<<"\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 18:04:32.305 [error] <0.314.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n<li>">>,"basliksss",<<"\n\n">>],
+                      [<<"\n\n<li>">>,[66,97,351,108,305,107],<<"\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-29 18:04:32.409 [error] <0.316.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:badarg Stacktrace: [{erlang,iolist_size,[[[[<<"\n\n<li>">>,"basliksss",<<"\n\n">>],
+                      [<<"\n\n<li>">>,[66,97,351,108,305,107],<<"\n\n">>]],
+                     <<"\n">>]],[]},{mochicow_request,respond,2,[{file,"src/mochicow_request.erl"},{line,401}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,529}]}]
+2014-12-30 11:30:21.895 [error] <0.139.0> gen_server <0.139.0> terminated with reason: bad argument in call to erlang:list_to_atom([{post,"post-1","basliksss","icerik",{{2014,12,29},{14,13,41}},{{2014,12,29},{14,13,41}}},{post,...}]) in boss_db_controller:infer_type_from_id/1 line 425
+2014-12-30 11:30:21.895 [error] <0.139.0> CRASH REPORT Process <0.139.0> with 0 neighbours exited with reason: bad argument in call to erlang:list_to_atom([{post,"post-1","basliksss","icerik",{{2014,12,29},{14,13,41}},{{2014,12,29},{14,13,41}}},{post,...}]) in boss_db_controller:infer_type_from_id/1 line 425 in gen_server:terminate/7 line 804
+2014-12-30 11:30:21.895 [error] <0.137.0> Supervisor {<0.137.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.139.0> exit with reason bad argument in call to erlang:list_to_atom([{post,"post-1","basliksss","icerik",{{2014,12,29},{14,13,41}},{{2014,12,29},{14,13,41}}},{post,...}]) in boss_db_controller:infer_type_from_id/1 line 425 in context child_terminated
+2014-12-30 11:38:15.787 [error] <0.324.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:38:18.909 [error] <0.326.0> POST /list [mnesiablog] 404 0ms
+2014-12-30 11:38:47.153 [error] <0.330.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:39:01.123 [error] <0.335.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:39:02.336 [error] <0.337.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{mnesiablog_posts_controller,list,['POST',[],
+                                  {mnesiablog_posts_controller,
+                                   {simple_bridge_request_wrapper,
+                                    mochiweb_request_bridge,
+                                    {mochicow_request,#Port<0.46363>,'POST',
+                                     "/",'HTTP/1.1',
+                                     {9,
+                                      {"host",
+                                       {"host","localhost:8001"},
+                                       {"accept",
+                                        {"accept",
+                                         "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+                                        nil,
+                                        {"accept-language",
+                                         {"accept-language",
+                                          "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3"},
+                                         {"accept-encoding",
+                                          {"accept-encoding","gzip, deflate"},
+                                          nil,nil},
+                                         {"connection",
+                                          {"connection","keep-alive"},
+                                          nil,
+                                          {"content-type",
+                                           {"content-type",
+                                            "application/x-www-form-urlencoded"},
+                                           {"content-length",
+                                            {"content-length","59"},
+                                            nil,nil},
+                                           nil}}}},
+                                       {"user-agent",
+                                        {"user-agent",
+                                         "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"},
+                                        {"referer",
+                                         {"referer","http://localhost:8001/"},
+                                         nil,nil},
+                                        nil}}},
+                                     <<"title=Ba%C5%9Fl%C4%B1k&content=%C4%B0%C3%A7erik&title=Yolla">>},
+                                    false,[],[],none}}],[]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 11:39:02.336 [error] <0.337.0> Error in controller, see console.log for details
+
+2014-12-30 11:39:02.347 [error] <0.337.0> POST / [mnesiablog] 500 0ms
+2014-12-30 11:50:07.277 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:07.278 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:08.760 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:08.760 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:54.198 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:54.198 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:55.741 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:50:55.741 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{20,erl_lint,{unbound_var,'NewGreeting'}}]}]
+2014-12-30 11:52:13.721 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2014-12-30 11:52:13.721 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2014-12-30 11:52:15.276 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2014-12-30 11:52:15.276 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2014-12-30 11:56:23.867 [error] <0.310.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:56:32.184 [error] <0.316.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:56:35.798 [error] <0.322.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:56:44.189 [error] <0.328.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 11:57:16.716 [error] <0.333.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:05:09.009 [error] <0.308.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,33},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:08:32.782 [error] <0.308.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,33},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:08:34.448 [error] <0.310.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,33},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:08:34.811 [error] <0.312.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,33},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:08:36.560 [error] <0.314.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,33},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:10:31.116 [error] <0.319.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:10:52.409 [error] <0.324.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:11:33.611 [error] <0.327.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,70},
+                           erlydtl_parser,
+                           ["syntax error before: ","'('"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:12:56.498 [error] <0.329.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,59},erlydtl_scanner,{illegal_char,45}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:12:57.142 [error] <0.331.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,59},erlydtl_scanner,{illegal_char,45}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:12:57.654 [error] <0.333.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,59},erlydtl_scanner,{illegal_char,45}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 12:15:24.871 [error] <0.338.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:15:58.099 [error] <0.343.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:16:16.675 [error] <0.348.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:17:13.386 [error] <0.353.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:22:38.466 [error] <0.360.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:23:12.342 [error] <0.365.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 12:23:48.275 [error] <0.368.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,48},erlydtl_scanner,{illegal_char,123}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:24.060 [error] <0.407.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,48},erlydtl_scanner,{illegal_char,123}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:24.970 [error] <0.409.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,48},erlydtl_scanner,{illegal_char,123}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:25.596 [error] <0.411.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,48},erlydtl_scanner,{illegal_char,123}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:25.830 [error] <0.413.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,48},erlydtl_scanner,{illegal_char,123}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:26.071 [error] <0.415.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,48},erlydtl_scanner,{illegal_char,123}}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:50.362 [error] <0.417.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,58},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:50.843 [error] <0.419.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,58},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:38:51.117 [error] <0.421.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,58},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:41:45.851 [error] <0.431.0>@boss_web_controller_handle_request:handle_request:30 Unhandled Error: error:{case_clause,{ok,[{"src/view/posts/list.html",
+                         [{{30,32},
+                           erlydtl_parser,
+                           ["syntax error before: ","':'"]}]}]}} Stacktrace: [{boss_web_controller_render,render_view,5,[{file,"src/boss/boss_web_controller_render.erl"},{line,217}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,290}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]},{boss_web_controller_handle_request,handle_request,4,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,26}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]}]
+2014-12-30 13:43:07.001 [error] <0.436.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 13:45:59.370 [error] <0.442.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 14:00:05.109 [error] <0.452.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 14:00:26.830 [error] <0.457.0> GET /css/styles.css [mnesiablog] 404 0ms
+2014-12-30 16:18:01.208 [error] <0.313.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,16}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:18:01.208 [error] <0.313.0> Error in controller, see console.log for details
+
+2014-12-30 16:18:01.215 [error] <0.313.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:20:51.966 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:20:51.973 [error] <0.308.0> Error in controller, see console.log for details
+
+2014-12-30 16:20:51.978 [error] <0.308.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:20:59.085 [error] <0.311.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:20:59.086 [error] <0.311.0> Error in controller, see console.log for details
+
+2014-12-30 16:20:59.086 [error] <0.311.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:22:12.011 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:22:12.016 [error] <0.308.0> Error in controller, see console.log for details
+
+2014-12-30 16:22:12.021 [error] <0.308.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:27:53.554 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{13,erl_lint,{unbound_var,'B'}}]}]
+2014-12-30 16:27:53.554 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{13,erl_lint,{unbound_var,'B'}}]}]
+2014-12-30 16:27:55.055 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{13,erl_lint,{unbound_var,'B'}}]}]
+2014-12-30 16:27:55.055 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{13,erl_lint,{unbound_var,'B'}}]}]
+2014-12-30 16:28:06.717 [error] <0.309.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{13,erl_lint,{unbound_var,'B'}}]}]
+2014-12-30 16:28:56.957 [error] <0.313.0>@boss_web_controller:call_controller_action:319 Error in controller error:undef Stacktrace: [{simple_bridge_request_wrapper,post_files,["media",
+                                          {simple_bridge_request_wrapper,
+                                           mochiweb_request_bridge,
+                                           {mochicow_request,#Port<0.46803>,
+                                            'POST',"/create",'HTTP/1.1',
+                                            {10,
+                                             {"host",
+                                              {"host","127.0.0.1:8001"},
+                                              {"accept",
+                                               {"accept",
+                                                "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+                                               nil,
+                                               {"accept-language",
+                                                {"accept-language",
+                                                 "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3"},
+                                                {"accept-encoding",
+                                                 {"accept-encoding",
+                                                  "gzip, deflate"},
+                                                 nil,nil},
+                                                {"connection",
+                                                 {"connection","keep-alive"},
+                                                 {"cache-control",
+                                                  {"cache-control",
+                                                   "max-age=0"},
+                                                  nil,nil},
+                                                 {"content-type",
+                                                  {"content-type",
+                                                   "application/x-www-form-urlencoded"},
+                                                  {"content-length",
+                                                   {"content-length","109"},
+                                                   nil,nil},
+                                                  nil}}}},
+                                              {"user-agent",
+                                               {"user-agent",
+                                                "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"},
+                                               {"referer",
+                                                {"referer",
+                                                 "http://127.0.0.1:8001/"},
+                                                nil,nil},
+                                               nil}}},
+                                            <<"title=Ba%C5%9Fl%C4%B1k&content=%C4%B0%C3%A7erik&media=Screenshot+from+2014-12-17+17%3A26%3A20.png&title=Yolla">>},
+                                           false,[],[],none}],[]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2014-12-30 16:28:56.958 [error] <0.313.0> Error in controller, see console.log for details
+
+2014-12-30 16:28:56.964 [error] <0.313.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:31:00.329 [error] <0.321.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,15}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:31:00.329 [error] <0.321.0> Error in controller, see console.log for details
+
+2014-12-30 16:31:00.330 [error] <0.321.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:34:04.647 [error] <0.327.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{17,erl_lint,{unbound_var,'_Name'}}]}]
+2014-12-30 16:35:04.535 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,15}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:35:04.542 [error] <0.308.0> Error in controller, see console.log for details
+
+2014-12-30 16:35:04.548 [error] <0.308.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:40:13.300 [error] <0.316.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-26 16:21:31.png",
+                                   "./scratch/149-45-239-133-71-85-102-121-186-46-245-217-169-243-208-127",
+                                   2465683,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:40:13.300 [error] <0.316.0> Error in controller, see console.log for details
+
+2014-12-30 16:40:13.301 [error] <0.316.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:46:02.193 [error] <0.321.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-26 16:21:31.png",
+                                   "./scratch/119-48-53-103-4-197-26-41-223-40-86-220-153-193-197-227",
+                                   2465683,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:46:02.195 [error] <0.321.0> Error in controller, see console.log for details
+
+2014-12-30 16:46:02.196 [error] <0.321.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:46:08.990 [error] <0.325.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-26 16:21:31.png",
+                                   "./scratch/17-249-15-99-102-83-203-147-86-117-193-186-28-42-153-219",
+                                   2465683,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:46:08.991 [error] <0.325.0> Error in controller, see console.log for details
+
+2014-12-30 16:46:08.991 [error] <0.325.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:46:16.781 [error] <0.328.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-17 17:47:47.png",
+                                   "./scratch/40-92-126-10-189-173-98-24-252-108-214-81-10-139-118-246",
+                                   2773810,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:46:16.782 [error] <0.328.0> Error in controller, see console.log for details
+
+2014-12-30 16:46:16.782 [error] <0.328.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:47:17.471 [error] <0.332.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-17 17:47:47.png",
+                                   "./scratch/193-230-76-121-0-88-230-13-198-45-15-172-219-152-178-71",
+                                   2773810,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:47:17.472 [error] <0.332.0> Error in controller, see console.log for details
+
+2014-12-30 16:47:17.472 [error] <0.332.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:48:04.042 [error] <0.335.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{18,erl_parse,["syntax error before: ","'->'"]}]}]
+2014-12-30 16:49:18.582 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-17 17:47:47.png",
+                                   "./scratch/147-68-232-35-170-75-140-140-55-121-177-3-212-249-29-52",
+                                   2773810,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:49:18.590 [error] <0.308.0> Error in controller, see console.log for details
+
+2014-12-30 16:49:18.597 [error] <0.308.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:50:05.965 [error] <0.311.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-17 17:47:47.png",
+                                   "./scratch/46-165-20-5-54-240-8-10-56-118-20-106-232-48-3-110",
+                                   2773810,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:50:05.966 [error] <0.311.0> Error in controller, see console.log for details
+
+2014-12-30 16:50:05.966 [error] <0.311.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:50:40.217 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-24 16:48:14.png",
+                                   "./scratch/206-192-200-126-108-108-14-114-173-6-149-243-60-97-45-189",
+                                   716670,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:50:40.218 [error] <0.310.0> Error in controller, see console.log for details
+
+2014-12-30 16:50:40.225 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:52:07.857 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Screenshot from 2014-12-24 16:48:14.png",
+                                   "./scratch/235-68-163-117-103-27-87-228-202-99-226-139-147-88-143-67",
+                                   716670,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:52:07.865 [error] <0.308.0> Error in controller, see console.log for details
+
+2014-12-30 16:52:07.870 [error] <0.308.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:55:09.594 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"en.po",
+                                   "./scratch/180-128-27-100-20-205-62-13-229-21-81-40-112-182-169-217",
+                                   10379,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:55:09.595 [error] <0.310.0> Error in controller, see console.log for details
+
+2014-12-30 16:55:09.600 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:56:05.934 [error] <0.308.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"en.po",
+                                   "./scratch/92-17-76-190-244-115-220-234-32-210-31-85-249-1-125-112",
+                                   10379,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:56:05.940 [error] <0.308.0> Error in controller, see console.log for details
+
+2014-12-30 16:56:05.948 [error] <0.308.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:56:09.846 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"en.po",
+                                   "./scratch/19-150-166-225-159-138-10-38-230-25-18-233-95-184-40-58",
+                                   10379,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:56:09.847 [error] <0.310.0> Error in controller, see console.log for details
+
+2014-12-30 16:56:09.848 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 16:56:16.869 [error] <0.313.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"pinar_sorular",
+                                   "./scratch/88-242-174-221-87-235-19-196-113-68-26-14-42-139-98-116",
+                                   1856,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 16:56:16.870 [error] <0.313.0> Error in controller, see console.log for details
+
+2014-12-30 16:56:16.870 [error] <0.313.0> POST /create [mnesiablog] 500 0ms
+2014-12-30 17:09:03.288 [error] <0.314.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"Emakina_All.xml",
+                                   "./scratch/234-177-205-162-137-23-45-121-253-135-17-218-249-249-13-183",
+                                   203,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2014-12-30 17:09:03.296 [error] <0.314.0> Error in controller, see console.log for details
+
+2014-12-30 17:09:03.302 [error] <0.314.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 14:46:32.049 [error] <0.313.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{sb_uploaded_file,temp_file,[[{sb_uploaded_file,"pinar_sorular",
+                                 "./scratch/109-135-54-32-189-127-22-112-145-254-109-134-62-84-24-127",
+                                 1856,"media",undefined}]],[{file,"src/sb_uploaded_file.erl"},{line,28}]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,15}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 14:46:32.050 [error] <0.313.0> Error in controller, see console.log for details
+
+2015-01-05 14:46:32.055 [error] <0.313.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 14:55:46.070 [error] <0.312.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{sb_uploaded_file,temp_file,[[{sb_uploaded_file,"the-codefather.png",
+                                 "./scratch/66-133-211-117-201-42-183-207-191-2-72-40-65-21-147-6",
+                                 7876,"media",undefined}]],[{file,"src/sb_uploaded_file.erl"},{line,28}]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,15}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 14:55:46.071 [error] <0.312.0> Error in controller, see console.log for details
+
+2015-01-05 14:55:46.076 [error] <0.312.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 14:59:40.349 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{sb_uploaded_file,temp_file,[[{sb_uploaded_file,"the-codefather.png",
+                                 "./scratch/73-80-27-223-14-37-13-63-241-123-174-14-79-23-34-93",
+                                 7876,"media",undefined}]],[{file,"src/sb_uploaded_file.erl"},{line,28}]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,15}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 14:59:40.356 [error] <0.310.0> Error in controller, see console.log for details
+
+2015-01-05 14:59:40.360 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 14:59:52.301 [error] <0.313.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{sb_uploaded_file,temp_file,[[{sb_uploaded_file,"tr.po",
+                                 "./scratch/148-180-126-227-189-130-143-152-206-145-175-121-32-136-160-83",
+                                 13623,"media",undefined}]],[{file,"src/sb_uploaded_file.erl"},{line,28}]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,15}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 14:59:52.302 [error] <0.313.0> Error in controller, see console.log for details
+
+2015-01-05 14:59:52.302 [error] <0.313.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 15:03:22.675 [error] <0.312.0>@boss_web_controller:call_controller_action:319 Error in controller error:undef Stacktrace: [{simple_bridge_request_wrapper,post_files,["media",
+                                          {simple_bridge_request_wrapper,
+                                           mochiweb_request_bridge,
+                                           {mochicow_request,#Port<0.46795>,
+                                            'POST',"/create",'HTTP/1.1',
+                                            {9,
+                                             {"host",
+                                              {"host","127.0.0.1:8001"},
+                                              {"accept",
+                                               {"accept",
+                                                "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+                                               nil,
+                                               {"accept-language",
+                                                {"accept-language",
+                                                 "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3"},
+                                                {"accept-encoding",
+                                                 {"accept-encoding",
+                                                  "gzip, deflate"},
+                                                 nil,nil},
+                                                {"connection",
+                                                 {"connection","keep-alive"},
+                                                 nil,
+                                                 {"content-type",
+                                                  {"content-type",
+                                                   "multipart/form-data; boundary=---------------------------134203879515745668231849730147"},
+                                                  {"content-length",
+                                                   {"content-length","52141"},
+                                                   nil,nil},
+                                                  nil}}}},
+                                              {"user-agent",
+                                               {"user-agent",
+                                                "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"},
+                                               {"referer",
+                                                {"referer",
+                                                 "http://127.0.0.1:8001/"},
+                                                nil,nil},
+                                               nil}}},
+                                            <<45,45,45,45,45,45,45,45,45,45,
+                                              45,45,45,45,45,45,45,45,45,45,
+                                              45,45,45,45,45,45,45,45,45,49,
+                                              51,52,50,48,51,56,55,57,53,49,
+                                              53,55,52,53,54,54,56,50,51,49,
+                                              56,52,57,55,51,48,49,52,55,13,
+                                              10,67,111,110,116,101,110,116,
+                                              45,68,105,115,112,111,115,105,
+                                              116,105,111,110,58,32,102,111,
+                                              114,109,45,100,97,116,97,59,32,
+                                              110,97,109,101,61,34,116,105,
+                                              116,108,101,34,13,10,13,10,97,
+                                              66,97,108,105,107,13,10,45,45,
+                                              45,45,45,45,45,45,45,45,45,45,
+                                              45,45,45,45,45,45,45,45,45,45,
+                                              45,45,45,45,45,45,45,49,51,52,
+                                              50,48,51,56,55,57,53,49,53,55,
+                                              52,53,54,54,56,50,51,49,56,52,
+                                              57,55,51,48,49,...
+2015-01-05 15:03:22.676 [error] <0.312.0> Error in controller, see console.log for details
+
+2015-01-05 15:03:22.684 [error] <0.312.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 15:05:37.135 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:undef Stacktrace: [{sb_uploaded_file,original_name,[],[]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 15:05:37.142 [error] <0.310.0> Error in controller, see console.log for details
+
+2015-01-05 15:05:37.147 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 15:06:29.280 [error] <0.313.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{mnesiablog_posts_controller,listp,['GET',[],
+                                   {mnesiablog_posts_controller,
+                                    {simple_bridge_request_wrapper,
+                                     mochiweb_request_bridge,
+                                     {mochicow_request,#Port<0.47140>,'GET',
+                                      "/create",'HTTP/1.1',
+                                      {6,
+                                       {"host",
+                                        {"host","127.0.0.1:8001"},
+                                        {"accept",
+                                         {"accept",
+                                          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+                                         nil,
+                                         {"accept-language",
+                                          {"accept-language",
+                                           "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3"},
+                                          {"accept-encoding",
+                                           {"accept-encoding","gzip, deflate"},
+                                           nil,nil},
+                                          {"connection",
+                                           {"connection","keep-alive"},
+                                           nil,nil}}},
+                                        {"user-agent",
+                                         {"user-agent",
+                                          "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"},
+                                         nil,nil}}},
+                                      <<>>},
+                                     false,[],[],none}}],[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,10}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 15:06:29.281 [error] <0.313.0> Error in controller, see console.log for details
+
+2015-01-05 15:06:29.281 [error] <0.313.0> GET /create [mnesiablog] 500 0ms
+2015-01-05 15:06:47.295 [error] <0.316.0>@boss_web_controller:call_controller_action:319 Error in controller error:undef Stacktrace: [{sb_uploaded_file,original_name,[],[]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,14}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 15:06:47.295 [error] <0.316.0> Error in controller, see console.log for details
+
+2015-01-05 15:06:47.296 [error] <0.316.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 15:10:42.546 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 15:10:42.546 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 15:10:44.124 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 15:10:44.124 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 15:13:51.377 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"latest.crx",
+                                   "./scratch/139-148-228-84-244-179-180-190-234-51-158-37-244-215-163-89",
+                                   1179,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 15:13:51.383 [error] <0.310.0> Error in controller, see console.log for details
+
+2015-01-05 15:13:51.388 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 15:17:04.121 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"latest.crx",
+                                   "./scratch/90-182-41-181-226-3-160-181-143-50-112-81-79-213-24-234",
+                                   1179,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 15:17:04.128 [error] <0.310.0> Error in controller, see console.log for details
+
+2015-01-05 15:17:04.134 [error] <0.310.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 15:18:39.060 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]
+2015-01-05 15:18:39.060 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [[{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]]
+2015-01-05 15:18:40.559 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]
+2015-01-05 15:18:40.559 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [[{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]]
+2015-01-05 15:19:13.104 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]
+2015-01-05 15:19:13.104 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [[{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]]
+2015-01-05 15:19:14.637 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:258 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]
+2015-01-05 15:19:14.637 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [[{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{12,erl_parse,["syntax error before: ","':'"]}]}]]
+2015-01-05 15:21:11.154 [error] <0.312.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{sb_uploaded_file,original_name,[[{sb_uploaded_file,"changed_last",
+                                     "./scratch/183-130-231-19-131-147-30-44-205-83-246-62-80-194-61-50",
+                                     1519,"media",undefined}]],[{file,"src/sb_uploaded_file.erl"},{line,26}]},{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]}]
+2015-01-05 15:21:11.155 [error] <0.312.0> Error in controller, see console.log for details
+
+2015-01-05 15:21:11.162 [error] <0.312.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 16:23:01.805 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:23:01.805 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:23:03.301 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:23:03.301 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:25:08.895 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:25:08.895 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:25:10.447 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:25:10.447 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:25:44.240 [error] <0.311.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:26:39.599 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:26:39.599 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:26:41.192 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:26:41.192 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:29:16.073 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:29:16.073 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:29:17.576 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:29:17.576 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}},{14,erl_lint,{undefined_record,uploaded_file}}]}]
+2015-01-05 16:30:05.794 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:30:05.794 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:30:07.328 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:30:07.328 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:32:38.711 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:32:38.711 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:32:40.336 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:32:40.336 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:14.293 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:14.293 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:15.811 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:15.811 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:47.965 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:47.965 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:49.486 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:33:49.486 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:34:45.176 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:34:45.176 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:34:46.670 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:34:46.670 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:35:52.360 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:35:52.360 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:35:53.966 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:35:53.966 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:36:14.904 [error] <0.311.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:36:17.234 [error] <0.314.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:42:41.632 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:42:41.632 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:42:43.198 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:42:43.198 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,3}}}]}]
+2015-01-05 16:43:25.158 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:25.158 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:26.712 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:26.712 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:43.919 [error] <0.311.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:44.569 [error] <0.314.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:44.724 [error] <0.317.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:44.891 [error] <0.320.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:45.047 [error] <0.323.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 16:43:45.215 [error] <0.326.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{list,2}}}]}]
+2015-01-05 17:08:09.074 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:08:09.074 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:08:10.603 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:08:10.603 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:08:36.991 [error] <0.311.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:08:37.630 [error] <0.314.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{10,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:10:09.141 [error] <0.2.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{9,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:10:09.141 [error] <0.2.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{9,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:10:10.650 [error] <0.95.0>@boss_load:compile_and_accumulate_errors:261 Compile Error, "src/controller/mnesiablog_posts_controller.erl" -> [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{9,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:10:10.650 [error] <0.95.0>@boss_load:make_all_modules:88 Load Module Error controller_modules : [{"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl",[{9,erl_lint,{redefine_function,{listp,3}}}]}]
+2015-01-05 17:11:49.497 [error] <0.310.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{mnesiablog_posts_controller,listp,['GET',[],
+                                   {mnesiablog_posts_controller,
+                                    {simple_bridge_request_wrapper,
+                                     mochiweb_request_bridge,
+                                     {mochicow_request,#Port<0.44859>,'GET',
+                                      "/",'HTTP/1.1',
+                                      {6,
+                                       {"host",
+                                        {"host","localhost:8001"},
+                                        {"accept",
+                                         {"accept",
+                                          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+                                         nil,
+                                         {"accept-language",
+                                          {"accept-language",
+                                           "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3"},
+                                          {"accept-encoding",
+                                           {"accept-encoding","gzip, deflate"},
+                                           nil,nil},
+                                          {"connection",
+                                           {"connection","keep-alive"},
+                                           nil,nil}}},
+                                        {"user-agent",
+                                         {"user-agent",
+                                          "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"},
+                                         nil,nil}}},
+                                      <<>>},
+                                     false,[],[],none}}],[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,10}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 17:11:49.503 [error] <0.310.0> Error in controller, see console.log for details
+
+2015-01-05 17:11:49.508 [error] <0.310.0> GET / [mnesiablog] 500 0ms
+2015-01-05 17:12:07.392 [error] <0.313.0> GET /list [mnesiablog] 404 0ms
+2015-01-05 17:12:10.331 [error] <0.315.0>@boss_web_controller:call_controller_action:319 Error in controller error:function_clause Stacktrace: [{mnesiablog_posts_controller,listp,['GET',[],
+                                   {mnesiablog_posts_controller,
+                                    {simple_bridge_request_wrapper,
+                                     mochiweb_request_bridge,
+                                     {mochicow_request,#Port<0.47212>,'GET',
+                                      "/",'HTTP/1.1',
+                                      {6,
+                                       {"host",
+                                        {"host","localhost:8001"},
+                                        {"accept",
+                                         {"accept",
+                                          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+                                         nil,
+                                         {"accept-language",
+                                          {"accept-language",
+                                           "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3"},
+                                          {"accept-encoding",
+                                           {"accept-encoding","gzip, deflate"},
+                                           nil,nil},
+                                          {"connection",
+                                           {"connection","keep-alive"},
+                                           nil,nil}}},
+                                        {"user-agent",
+                                         {"user-agent",
+                                          "Mozilla/5.0 (X11; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0"},
+                                         nil,nil}}},
+                                      <<>>},
+                                     false,[],[],none}}],[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,10}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 17:12:10.332 [error] <0.315.0> Error in controller, see console.log for details
+
+2015-01-05 17:12:10.332 [error] <0.315.0> GET / [mnesiablog] 500 0ms
+2015-01-05 17:16:02.900 [error] <0.322.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"m42_hst_f.jpg",
+                                   "./scratch/163-252-159-80-31-213-239-249-4-57-57-245-81-77-200-69",
+                                   188504,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 17:16:02.900 [error] <0.322.0> Error in controller, see console.log for details
+
+2015-01-05 17:16:02.907 [error] <0.322.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 17:19:47.816 [error] <0.314.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"m42_hst_f.jpg",
+                                   "./scratch/223-186-3-196-246-194-34-96-51-141-107-254-178-234-235-112",
+                                   188504,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 17:19:47.816 [error] <0.314.0> Error in controller, see console.log for details
+
+2015-01-05 17:19:47.821 [error] <0.314.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 17:22:28.135 [error] <0.324.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"m42_hst_f.jpg",
+                                   "./scratch/194-167-186-12-221-37-137-197-236-241-191-137-245-205-239-146",
+                                   188504,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 17:22:28.136 [error] <0.324.0> Error in controller, see console.log for details
+
+2015-01-05 17:22:28.140 [error] <0.324.0> POST /create [mnesiablog] 500 0ms
+2015-01-05 17:58:26.882 [error] <0.316.0>@boss_web_controller:call_controller_action:319 Error in controller error:{badmatch,[{sb_uploaded_file,"1377488_10151729048869022_1100557054_n.jpg",
+                                   "./scratch/139-115-119-66-116-177-125-23-159-46-254-202-22-34-124-94",
+                                   21601,"media",undefined}]} Stacktrace: [{mnesiablog_posts_controller,listp,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,12}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]},{boss_web_controller_handle_request,set_timer,8,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,160}]},{boss_web_controller_handle_request,build_dynamic_response,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,129}]}]
+2015-01-05 17:58:26.883 [error] <0.316.0> Error in controller, see console.log for details
+
+2015-01-05 17:58:26.888 [error] <0.316.0> POST /create [mnesiablog] 500 0ms
+2015-01-07 17:42:03.538 [error] <0.144.0> gen_server <0.144.0> terminated with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}})
+2015-01-07 17:42:03.538 [error] <0.144.0> CRASH REPORT Process <0.144.0> with 0 neighbours exited with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in gen_server:terminate/7 line 804
+2015-01-07 17:42:03.539 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.144.0> exit with reason no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in context child_terminated
+2015-01-07 17:42:03.545 [error] <0.320.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{post,id,
+               [{post,"post-13","saddasdasdsadasd",
+                    "asdsadÄ°Ã§erikasdsadasdasd",
+                    {{2015,1,5},{17,44,13}},
+                    {{2015,1,5},{17,44,13}}}],
+               []},
+           {boss_db_adapter_mnesia,'-apply_sort/3-fun-0-',3,
+               [{file,"src/db_adapters/boss_db_adapter_mnesia.erl"},
+                {line,92}]},
+           {lists,sort,2,[{file,"lists.erl"},{line,967}]},
+           {boss_db_adapter_mnesia,find,7,
+               [{file,"src/db_adapters/boss_db_adapter_mnesia.erl"},
+                {line,56}]},
+           {boss_db_controller,handle_call,3,
+               [{file,"src/boss_db_controller.erl"},{line,122}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,
+          [<0.144.0>,{find,post,[],all,0,id,ascending,[]},30000]}} Stacktrace: [{gen_server,call,3,[{file,"gen_server.erl"},{line,190}]},{boss_pool,call,3,[{file,"src/boss_pool.erl"},{line,12}]},{mnesiablog_posts_controller,list,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,7}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]}]
+2015-01-07 17:42:03.550 [error] <0.320.0> Error in controller, see console.log for details
+
+2015-01-07 17:42:03.555 [error] <0.320.0> GET / [mnesiablog] 500 0ms
+2015-01-07 17:43:56.375 [error] <0.145.0> gen_server <0.145.0> terminated with reason: no function clause matching boss_db_controller:infer_type_from_id(post) line 422
+2015-01-07 17:43:56.376 [error] <0.145.0> CRASH REPORT Process <0.145.0> with 0 neighbours exited with reason: no function clause matching boss_db_controller:infer_type_from_id(post) line 422 in gen_server:terminate/7 line 804
+2015-01-07 17:43:56.376 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.145.0> exit with reason no function clause matching boss_db_controller:infer_type_from_id(post) line 422 in context child_terminated
+2015-01-07 17:44:27.743 [error] <0.146.0> gen_server <0.146.0> terminated with reason: no function clause matching boss_db_controller:infer_type_from_id(post) line 422
+2015-01-07 17:44:27.744 [error] <0.146.0> CRASH REPORT Process <0.146.0> with 0 neighbours exited with reason: no function clause matching boss_db_controller:infer_type_from_id(post) line 422 in gen_server:terminate/7 line 804
+2015-01-07 17:44:27.745 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.146.0> exit with reason no function clause matching boss_db_controller:infer_type_from_id(post) line 422 in context child_terminated
+2015-01-07 17:46:32.263 [error] <0.147.0> gen_server <0.147.0> terminated with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}})
+2015-01-07 17:46:32.263 [error] <0.147.0> CRASH REPORT Process <0.147.0> with 0 neighbours exited with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in gen_server:terminate/7 line 804
+2015-01-07 17:46:32.263 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.147.0> exit with reason no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in context child_terminated
+2015-01-07 17:46:32.263 [error] <0.347.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{post,id,
+               [{post,"post-13","saddasdasdsadasd",
+                    "asdsadÄ°Ã§erikasdsadasdasd",
+                    {{2015,1,5},{17,44,13}},
+                    {{2015,1,5},{17,44,13}}}],
+               []},
+           {boss_db_adapter_mnesia,'-apply_sort/3-fun-0-',3,
+               [{file,"src/db_adapters/boss_db_adapter_mnesia.erl"},
+                {line,92}]},
+           {lists,sort,2,[{file,"lists.erl"},{line,967}]},
+           {boss_db_adapter_mnesia,find,7,
+               [{file,"src/db_adapters/boss_db_adapter_mnesia.erl"},
+                {line,56}]},
+           {boss_db_controller,handle_call,3,
+               [{file,"src/boss_db_controller.erl"},{line,122}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,
+          [<0.147.0>,{find,post,[],all,0,id,ascending,[]},30000]}} Stacktrace: [{gen_server,call,3,[{file,"gen_server.erl"},{line,190}]},{boss_pool,call,3,[{file,"src/boss_pool.erl"},{line,12}]},{mnesiablog_posts_controller,list,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,7}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]}]
+2015-01-07 17:46:32.264 [error] <0.347.0> Error in controller, see console.log for details
+
+2015-01-07 17:46:32.264 [error] <0.347.0> GET / [mnesiablog] 500 0ms
+2015-01-07 17:46:34.846 [error] <0.148.0> gen_server <0.148.0> terminated with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}})
+2015-01-07 17:46:34.846 [error] <0.148.0> CRASH REPORT Process <0.148.0> with 0 neighbours exited with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in gen_server:terminate/7 line 804
+2015-01-07 17:46:34.846 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.148.0> exit with reason no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in context child_terminated
+2015-01-07 17:46:34.847 [error] <0.350.0>@boss_web_controller:call_controller_action:319 Error in controller exit:{{function_clause,
+          [{post,id,
+               [{post,"post-13","saddasdasdsadasd",
+                    "asdsadÄ°Ã§erikasdsadasdasd",
+                    {{2015,1,5},{17,44,13}},
+                    {{2015,1,5},{17,44,13}}}],
+               []},
+           {boss_db_adapter_mnesia,'-apply_sort/3-fun-0-',3,
+               [{file,"src/db_adapters/boss_db_adapter_mnesia.erl"},
+                {line,92}]},
+           {lists,sort,2,[{file,"lists.erl"},{line,967}]},
+           {boss_db_adapter_mnesia,find,7,
+               [{file,"src/db_adapters/boss_db_adapter_mnesia.erl"},
+                {line,56}]},
+           {boss_db_controller,handle_call,3,
+               [{file,"src/boss_db_controller.erl"},{line,122}]},
+           {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,607}]},
+           {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,639}]},
+           {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,237}]}]},
+      {gen_server,call,
+          [<0.148.0>,{find,post,[],all,0,id,ascending,[]},30000]}} Stacktrace: [{gen_server,call,3,[{file,"gen_server.erl"},{line,190}]},{boss_pool,call,3,[{file,"src/boss_pool.erl"},{line,12}]},{mnesiablog_posts_controller,list,3,[{file,"/home/emakina/mnesiablog/src/controller/mnesiablog_posts_controller.erl"},{line,7}]},{boss_web_controller,call_controller_action,3,[{file,"src/boss/boss_web_controller.erl"},{line,316}]},{boss_web_controller,apply_action,4,[{file,"src/boss/boss_web_controller.erl"},{line,308}]},{boss_web_controller,execute_action_inner,9,[{file,"src/boss/boss_web_controller.erl"},{line,287}]},{boss_web_controller_handle_request,process_dynamic_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,254}]},{boss_web_controller_handle_request,process_request,5,[{file,"src/boss/boss_web_controller_handle_request.erl"},{line,240}]}]
+2015-01-07 17:46:34.847 [error] <0.350.0> Error in controller, see console.log for details
+
+2015-01-07 17:46:34.847 [error] <0.350.0> GET / [mnesiablog] 500 0ms
+2015-01-07 17:46:49.175 [error] <0.322.0> gen_server <0.322.0> terminated with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}})
+2015-01-07 17:46:49.175 [error] <0.322.0> CRASH REPORT Process <0.322.0> with 0 neighbours exited with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in gen_server:terminate/7 line 804
+2015-01-07 17:46:49.175 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.322.0> exit with reason no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in context child_terminated
+2015-01-07 17:46:52.960 [error] <0.336.0> gen_server <0.336.0> terminated with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}})
+2015-01-07 17:46:52.960 [error] <0.336.0> CRASH REPORT Process <0.336.0> with 0 neighbours exited with reason: no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in gen_server:terminate/7 line 804
+2015-01-07 17:46:52.961 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.336.0> exit with reason no function clause matching post:id({post,"post-13","saddasdasdsadasd","asdsadÄ°Ã§erikasdsadasdasd",{{2015,1,5},{17,44,13}},{{2015,...},...}}) in context child_terminated
+2015-01-07 17:49:00.936 [error] <0.349.0> gen_server <0.349.0> terminated with reason: no function clause matching boss_db_controller:infer_type_from_id('post-13') line 422
+2015-01-07 17:49:00.936 [error] <0.349.0> CRASH REPORT Process <0.349.0> with 0 neighbours exited with reason: no function clause matching boss_db_controller:infer_type_from_id('post-13') line 422 in gen_server:terminate/7 line 804
+2015-01-07 17:49:00.937 [error] <0.143.0> Supervisor {<0.143.0>,poolboy_sup} had child boss_db_controller started with {boss_db_controller,start_link,undefined} at <0.349.0> exit with reason no function clause matching boss_db_controller:infer_type_from_id('post-13') line 422 in context child_terminated

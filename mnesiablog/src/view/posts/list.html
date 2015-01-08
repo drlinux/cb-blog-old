@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 meh</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<form name="mnesia-form" action="/create" method="post" enctype="multipart/form-data" style="display:block;">
+
+    <input type="text" name="title" value="Başlık" /><br />
+    
+    <input type="text" name="content" value="İçerik" /><br />
+    
+    <input type="file" name="media" /><br />
+    
+    <input type="submit" name="submit" value="Yolla" /><br />
+
+</form>
+
+
+
+{% for entry in entries %}
+
+<li>{{ entry.slug }} {{ entry.title }}  {{ entry.created_at|date:"d-m-Y" }}
+
+{% endfor %}
+
+</body>
+</html>
